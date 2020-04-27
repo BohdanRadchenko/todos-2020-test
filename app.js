@@ -1,8 +1,7 @@
 const express = require('express')
 const path = require('path')
-const config = require('config')
 
-const PORT = process.env.PORT || config.get("port") || 5000
+const PORT = process.env.PORT|| 5000
 
 const app = express()
 
