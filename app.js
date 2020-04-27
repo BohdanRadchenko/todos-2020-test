@@ -11,6 +11,7 @@ app.get("*", (req, res) => {
 })
 
 const start = async () => {
+    try {
         app.listen(PORT, () => console.log(`app hes been started on port ${PORT} ...`))
     } catch (e) {
         process.exit(1)
